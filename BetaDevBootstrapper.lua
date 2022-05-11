@@ -79,5 +79,5 @@ for i,v in pairs(KrnlFiles["Extract"]) do
     ExtractFile(v, os.getenv("APPDATA") .. "/Krnl")
 end
 print("[+] Done!")
-os.execute("powershell.exe New-Item -Type SymbolicLink -Path ".. CurrentDirectory + "/krnl_beta.exe" .." -Target " .. os.getenv("APPDATA") .. "/Krnl/KrnlUI.exe")
+os.execute("powershell.exe New-Item -Type SymbolicLink -Path ".. CurrentDirectory .. "/krnl_beta.exe" .." -Target " .. os.getenv("APPDATA") .. "/Krnl/KrnlUI.exe")
 os.execute("powershell.exe " .. os.getenv("APPDATA") .. "/Krnl/KrnlUI.exe")
